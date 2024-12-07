@@ -37,15 +37,30 @@ h1 img {
     margin-bottom: 50px;
 }
 
+#contributors {
+    padding: 15px;
+    background-color: #693a9d;
+    color: white;
+    border-radius: 15px;
+}
+
+#contributors a {
+    color: white;
+}
+
+.centered {
+    margin: auto;
+}
+
 .btn {
     display: inline-block;
     margin: 10px 0;
-    background-color: #5D3FD3;
+    background-color: #693a9d;
     color: #ffffff;
     padding: 10px 20px;
     border-radius: 10px;
     text-decoration: none;
-    border: 3px solid #4B0082;
+    border: 3px solid #693a9d;
     transition: all 0.3s ease;
     position: relative;
     top: 0;
@@ -53,7 +68,7 @@ h1 img {
 }
 
 .btn:hover {
-    background-color: #4B0082;
+    background-color: #693a9d;
     color: #ffffff;
 }
 
@@ -66,14 +81,14 @@ h1 img {
 
 .btn.secondary {
     background-color: #ffffff;
-    color: #5D3FD3;
-    border: 3px solid #5D3FD3;
+    color: #693a9d;
+    border: 3px solid #693a9d;
 }
 
 .btn.secondary:hover {
     background-color: #f0f0f0;
-    color: #4B0082;
-    border-color: #4B0082;
+    color: #693a9d;
+    border-color: #693a9d;
 }
 
 .btn.secondary:active {
