@@ -48,8 +48,20 @@ h1 img {
     color: white;
 }
 
+#founding-encart {
+    padding: 15px;
+    background-color: #e6dcf5;
+    color: #1f1230;
+    border-radius: 15px;
+    border: 2px solid #693a9d;
+}
+
 .centered {
     margin: auto;
+}
+
+#founding-encart .btn {
+    margin-top: 8px;
 }
 
 .btn {
