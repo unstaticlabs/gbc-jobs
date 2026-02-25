@@ -420,6 +420,23 @@ summary {
   border-top: 1px dashed #ddd;
 }
 
+.role-details p {
+  margin-bottom: 4px;
+}
+
+.role-details p + p {
+  margin-top: 16px;
+}
+
+.role-details ul {
+  margin: 4px 0 0;
+  padding-left: 20px;
+}
+
+.role-details ul + p {
+  margin-top: 16px;
+}
+
 pre {
   margin: 0;
   border-radius: 12px;
@@ -461,8 +478,7 @@ details p {
   }
 
   .top-actions a {
-    flex: 1 1 auto;
-    text-align: center;
+    flex: 0 0 auto;
   }
 
   .stack-grid,
@@ -480,7 +496,7 @@ details p {
   }
 
   .role-actions .btn {
-    width: 100%;
+    width: auto;
   }
 
   .hero-cta .btn {
@@ -526,8 +542,8 @@ details p {
   }
 
   .hero-cta .btn {
-    width: 100%;
-    flex: 1 1 100%;
+    width: auto;
+    flex: 0 0 auto;
   }
 
   .chip-row {
