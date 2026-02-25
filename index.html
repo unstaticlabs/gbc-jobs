@@ -305,7 +305,7 @@
         .map((item) => chipButton(item, selectedTypes.has(item), "type"))
         .join("");
 
-      document.querySelectorAll(".chip").forEach((chip) => {
+      document.querySelectorAll("#initiative-chips .chip, #type-chips .chip").forEach((chip) => {
         chip.addEventListener("click", () => {
           const group = chip.getAttribute("data-group");
           const value = chip.getAttribute("data-value");
