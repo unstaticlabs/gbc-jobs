@@ -1,0 +1,24 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  actionlint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # This repository holds static files and no build. Every open Renovate
+      # pull request bumps a GitHub action, so the workflow files are what a
+      # check can read. actionlint reports a bad reference or a bad
+      # expression before the next push deploys it.
+      - name: Lint the workflows
+        uses: docker://rhysd/actionlint:latest
+        with:
+          args: -color
