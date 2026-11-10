@@ -567,3 +567,23 @@ details p {
     font-size: 13px;
   }
 }
+
+.empty-state > p {
+  margin-top: 6px;
+}
+
+.empty-grid {
+  margin-top: 14px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 14px;
+}
+
+.empty-grid .role-actions {
+  margin-top: 14px;
+  justify-content: flex-start;
+}
+
+[hidden] {
+  display: none !important;
+}
